@@ -37,13 +37,13 @@ namespace shambala_sistem_programming_24_10_2023
                      $"{process.BasePriority}");
                 Console.Write("");
                 Console.Read();
-                Console.Write("выбираем что делать: 1 - убить  2 - пожалеть");
+                Console.WriteLine("выбираем что делать: 1 - убить  2 - пожалеть");
                 Console.Write("");
                 //string chouse = Console.ReadLine();
                 // Console.Read();
                 // chrome.exe
                 // notepad.exe
-                while (process.HasExited)
+                while (!process.HasExited)
                 {
                     Console.Write("выбираем что делать: 1 - убить  2 - пожалеть");
                     Console.WriteLine("");
@@ -53,6 +53,14 @@ namespace shambala_sistem_programming_24_10_2023
                         Console.WriteLine("процесс завершен");
                         process.Kill();
                         Console.WriteLine(process.ExitCode);
+                        Console.WriteLine(process.StartTime);
+                        Console.ReadLine();
+                    }
+                    else if ( chouse == "2")
+                    {
+                        Console.WriteLine("выход из программы");
+                        Console.Read();
+                        break;
                     }
                     
                 }
