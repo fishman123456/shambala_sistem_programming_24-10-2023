@@ -54,11 +54,13 @@ namespace shambala_sistem_programming_24_10_2023
                         process.Kill();
                         Console.WriteLine(process.ExitCode);
                         Console.WriteLine(process.StartTime);
+                        Console.WriteLine("для завершения нажмите клавишу....");
                         Console.ReadLine();
                     }
                     else if ( chouse == "2")
                     {
                         Console.WriteLine("выход из программы");
+                        Console.WriteLine("для завершения нажмите клавишу....");
                         Console.Read();
                         break;
                     }
