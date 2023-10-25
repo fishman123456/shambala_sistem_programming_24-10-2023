@@ -35,10 +35,6 @@ namespace shambala_sistem_programming_24_10_2023
                  Console.WriteLine($"{process.Id} - " + "\n"+
                      $"{process.ProcessName} - " + "\n" +
                      $"{process.BasePriority}");
-                Console.Write("");
-                Console.Read();
-                Console.WriteLine("выбираем что делать: 1 - убить  2 - пожалеть");
-                Console.Write("");
                 //string chouse = Console.ReadLine();
                 // Console.Read();
                 // chrome.exe
